@@ -1,13 +1,49 @@
 package chessgame;
 
-public abstract class ChessPiece {
-	String locate;
-	Boolean is_alive;
+public class ChessPiece {
+	private String locate;
+	private String type;
+	private String team;
+	private Boolean is_alive;
 	
-	ChessPiece(String locate){
+	//생성자
+	ChessPiece(String locate, String type, String team){
 		this.locate = locate;
+		this.type = type;
+		this.team = team;
 		this.is_alive = true;
 	}
+
+	//Getter & Setter
+	public String getLocate() {
+		return locate;
+	}
+
+	public void setLocate(String locate) {
+		this.locate = locate;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public Boolean getIs_alive() {
+		return is_alive;
+	}
+
+	public void setIs_alive(Boolean is_alive) {
+		this.is_alive = is_alive;
+	}
 	
-	abstract String[] cal_move(); //현재 말이 움직일 수 있는 범위를 계산하는 함수
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
 }
