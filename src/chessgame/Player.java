@@ -6,16 +6,16 @@ public class Player {
 	private int timelimit;
 	public Boolean turn;
 
-	//»ý¼ºÀÚ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	Player(String team, int timelimit){
 		this.team = team;
 		this.timelimit = timelimit;
 		this.pieces = new ChessPiece[16];
 		
 		if(this.team.equals("white")) {
-			//¹éÀÌ ¸ÕÀú ½ÃÀÛÇÏ¹Ç·Î turnÀ» true·Î ½ÃÀÛ
+			//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¹Ç·ï¿½ turnï¿½ï¿½ trueï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			this.turn = true;
-			//Ã¼½º¸» Ã¤¿ì±â
+			//Ã¼ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½
 			pieces[0] = new ChessPiece("a1", "Rook", team);
 			pieces[1] = new ChessPiece("b1", "Knight", team);
 			pieces[2] = new ChessPiece("c1", "Bishop", team);
@@ -29,9 +29,9 @@ public class Player {
 			}
 		}
 		else {
-			//ÈæÀÌ ³ªÁß¿¡ ½ÃÀÛÇÏ¹Ç·Î turnÀ» false·Î ½ÃÀÛ
+			//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¹Ç·ï¿½ turnï¿½ï¿½ falseï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			this.turn = false;
-			//Ã¼½º¸» Ã¤¿ì±â
+			//Ã¼ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½
 			pieces[0] = new ChessPiece("a8", "Rook", team);
 			pieces[1] = new ChessPiece("b8", "Knight", team);
 			pieces[2] = new ChessPiece("c8", "Bishop", team);
